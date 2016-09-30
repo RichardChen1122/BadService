@@ -103,8 +103,8 @@ router.route('/bears/latest/:bear_number')
     });
 router.route('/bears/charge/:bear_number')
     .post(function (req, res) {
-        var newbear = new Bear();      // create a new instance of the Bear model
-        newbear.name = req.body.name;  // set the bears name (comes from the request)
+        var newbear = new Bear();      
+        newbear.name = req.body.name;  
         newbear.number = req.body.number;
         newbear.customtype = 0;
         newbear.customdate = req.body.customdate;
